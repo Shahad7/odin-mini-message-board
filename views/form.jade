@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+    h1=title
+    form(action='/new',method ='post' )
+        input(type="text", name="message", placeholder="Type your message here..")
+        div
+            input(type="text", name="user",placeholder="Your name")
+        input(type="submit")
+    
